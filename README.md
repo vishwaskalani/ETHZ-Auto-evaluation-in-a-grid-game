@@ -33,6 +33,8 @@ The github repository is divided into various directories and files namely -
 1. The command line tool `ffmpeg` should be installed to run the program. It can be installed in windows as well as linux machines
 2. Compile and run the java program with supportingImages folder in the same directory. The commands would be `javac GridMap.java` folowed by `java GridMap`.
 3. Running the java program would generate a number of images and the gif or mp4 file in the same folder.
+4. To get an mp4 file, the command executed using java runtime execution is `ffmpeg -r 20 -i myimage%04d.png -pix_fmt yuv420p movie.mp4`
+5. To get a gif file, the command executed using java runtime execution is `ffmpeg -f image2 -framerate 20 -i myimage%04d.png -loop -1 movie.gif`
 
 
 ---
